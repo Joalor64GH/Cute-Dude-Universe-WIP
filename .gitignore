@@ -1,3 +1,11 @@
-export
-dump
-.DS_Store
+### Main Stuff
+export/
+.vscode/
+*.code-workspace
+
+### VS. Code-Related
+# ! means a file should be added regardless of it it gets ignored prior.
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
