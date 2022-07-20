@@ -55,8 +55,6 @@
 	<haxelib name="flixel-ui"/>
 	<haxelib name="hxCodec" if="desktop"/>
 	<haxelib name="discord_rpc" if="desktop"/>
-	<haxelib name="systools" if="desktop"/>
-	<ndll name="systools" haxelib="systools" if="desktop"/>
 
 	<!--In case you want to use nape with flixel-->
 	<!--<haxelib name="nape-haxe4" />-->
