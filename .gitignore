@@ -1,6 +1,7 @@
 ### Main Stuff
 export/
 .vscode/
+.DS_Store
 
 ### VS. Code-Related
 # ! means a file should be added regardless of it getting ignored prior.
