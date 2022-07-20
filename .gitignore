@@ -4,7 +4,7 @@ export/
 *.code-workspace
 
 ### VS. Code-Related
-# ! means a file should be added regardless of it it gets ignored prior.
+# ! means a file should be added regardless of it getting ignored prior.
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
