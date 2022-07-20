@@ -1,7 +1,8 @@
 ### Main Stuff
 export/
 .vscode/
-*.code-workspace
+mods/
+.DS_Store
 
 ### VS. Code-Related
 # ! means a file should be added regardless of it getting ignored prior.
@@ -9,3 +10,4 @@ export/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+*.code-workspace
