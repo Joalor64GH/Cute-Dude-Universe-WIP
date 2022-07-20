@@ -34,8 +34,8 @@
 	
 	<source path="source" />
 	<assets path="assets" />
-    <assets path='art/readme.txt' rename='do NOT readme.txt' />
-    <assets path='Launch.bat' if="windows"/>
+        <assets path='art/readme.txt' rename='do NOT readme.txt' />
+        <assets path='Launch.bat' if="windows"/>
 	<!--assets path="CHANGELOG.md" rename='changelog.txt'/>-->
 
 	<!-- NOTE FOR FUTURE SELF SINCE FONTS ARE ALWAYS FUCKY 
