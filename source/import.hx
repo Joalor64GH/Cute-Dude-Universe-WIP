@@ -1,1 +1,1 @@
-import AssetPaths;
+import Paths;
