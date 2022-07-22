@@ -33,7 +33,37 @@
 	<set name="BUILD_DIR" value="export/release" unless="debug" />
 	
 	<source path="source" />
-	<assets path="assets" />
+	
+	<assets path="assets/images" />
+	<assets path="assets/data" />
+	<assets path="assets/videos" />
+	
+	<!-- <library name="noPreload" preload='false'/> -->
+	<!-- <library name="noPreload"/> -->
+	<assets path="assets/music" include="*.ogg"/>
+	<assets path="assets/sounds" include="*.ogg"/>
+	
+	<!-- <define name="PRELOAD_ALL" /> -->
+	
+	<define name="PRELOAD_ALL" unless="web" />
+	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL"/>
+	
+	<section if="PRELOAD_ALL">
+		<library name="data"    preload="true" />
+		<library name="sounds"  preload="true" />
+		<library name="music" 	preload="true" />
+		<library name="images"  preload="true" />
+		<library name="videos"  preload="true" />
+	</section>
+	
+	<section if="NO_PRELOAD_ALL">
+		<library name="data"    preload="false" />
+		<library name="sounds"  preload="false" />
+		<library name="music" 	preload="false" />
+		<library name="images"  preload="false" />
+		<library name="videos"  preload="false" />
+	</section>
+	
         <assets path='art/readme.txt' rename='do NOT readme.txt' />
         <assets path='Launch.bat' if="windows"/>
 	<!--assets path="CHANGELOG.md" rename='changelog.txt'/>-->
