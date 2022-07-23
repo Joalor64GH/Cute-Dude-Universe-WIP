@@ -20,8 +20,3 @@ class Main extends Sprite
 		addChild(new FlxGame(0, 0, PlayState));
 	}
 }
-
-    public static var webmHandler:WebmHandler;
-
-    }
-}
