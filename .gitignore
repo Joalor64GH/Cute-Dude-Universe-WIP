@@ -3,6 +3,15 @@ export/
 .vscode/
 .DS_Store
 
+### GameJolt-Specific
+GJKeys.hx
+GameJolt.hx
+
+# Local history which shouldn't be shared.
+desktop.ini
+.history/
+.ionide
+
 ### VS. Code-Related
 # ! means a file should be added regardless of it getting ignored prior.
 !.vscode/settings.json
