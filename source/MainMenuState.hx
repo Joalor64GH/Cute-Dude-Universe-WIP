@@ -35,7 +35,6 @@ class MainMenuState extends FlxState
 					FlxG.switchState(new PlayState());
 				case 1:
 					trace('Options');
-					FlxG.switchState(new OptionsState());
 				case 2:
 					trace('Exit');
 					#if (windows || cpp)
