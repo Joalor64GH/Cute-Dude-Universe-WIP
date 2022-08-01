@@ -1,5 +1,7 @@
 package;
 
+import flixel.FlxG;
+import flixel.FlxState;
 import Menu.MenuSelection;
 import flixel.FlxState;
 import flixel.util.FlxColor;
@@ -48,7 +50,7 @@ class MainMenuState extends FlxState
 			}
 		}
 		// Open menu
-		openSubState(new Menu(substateColor.setRGB(0, 0, 0, 125)));
+		FlxG.switchState(new Menu(substateColor.setRGB(0, 0, 0, 125)));
 
 		super.create();
 	}
