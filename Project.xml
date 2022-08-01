@@ -33,10 +33,17 @@
 	<set name="BUILD_DIR" value="export/release" unless="debug" />
 	
 	<source path="source" />
+
+	<!-- CUSTOM DEFINES -->
+	<define name="HAXE_EXTENSION" unless="web || neko" />
+	<define name="LUA_EXTENSION" if="desktop" />
+    <define name="HSCRIPT_ALLOWED" />
+	<define name="VIDEO_PLUGIN" if="web || windows" unless="32bits"/>
 	
 	<assets path="assets/images" />
 	<assets path="assets/data" />
 	<assets path="assets/videos" />
+	<assets path="assets/scripts" />
 	
 	<!-- <library name="noPreload" preload='false'/> -->
 	<!-- <library name="noPreload"/> -->
@@ -58,6 +65,7 @@
 		<library name="music" 	preload="true" />
 		<library name="images"  preload="true" />
 		<library name="videos"  preload="true" />
+		<library name="scripts" preload="true" />
 	</section>
 	
 	<section if="NO_PRELOAD_ALL">
@@ -66,6 +74,7 @@
 		<library name="music" 	preload="false" />
 		<library name="images"  preload="false" />
 		<library name="videos"  preload="false" />
+		<library name="scripts" preload="false" />
 	</section>
 	
         <assets path='art/readme.txt' rename='do NOT readme.txt' />
@@ -84,10 +93,19 @@
 
 	<!--In case you want to use the addons package-->
 	<haxelib name="flixel-addons"/>
+	<haxelib name="hscript" />
+    <haxelib name="hscript-ex" />
+
+	<haxelib name="actuate" />
+	<haxelib name="extension-webm" if="windows || mac"/> <!-- Make sure to use https://github.com/KadeDev/extension-webm/ -->
 
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui"/>
-	<haxelib name="hxCodec" if="desktop"/>
+	<haxelib name="flixel-tools" />
+	<haxelib name="hxCodec" if="VIDEO_PLUGIN"/>
+	<haxelib name="linc_luajit" if="LUA_EXTENSION"/>
+	<haxelib name="hxvm-luajit" if="LUA_EXTENSION"/>
+	<haxelib name="SScript" if="HAXE_EXTENSION"/>
 	<haxelib name="discord_rpc" if="desktop"/>
 
 	<!--In case you want to use nape with flixel-->
