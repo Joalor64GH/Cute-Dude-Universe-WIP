@@ -30,7 +30,7 @@ class MainMenuState extends FlxState
 			{
 				case 0:
 					trace('Play');
-					openState(new PlayState());
+					FlxG.switchState(new PlayState());
 				case 1:
 					trace('Options');
 				case 2:
