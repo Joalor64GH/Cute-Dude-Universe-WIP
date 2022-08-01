@@ -35,6 +35,7 @@
 	<source path="source" />
 
 	<!-- CUSTOM DEFINES -->
+	<define name="HAXEFLIXEL_LOGO"/> <!--Allows the Haxeflixel watermark to show on startup when compiled as release;.-->
 	<define name="HAXE_EXTENSION" unless="web || neko" />
 	<define name="LUA_EXTENSION" if="desktop" />
     <define name="HSCRIPT_ALLOWED" />
