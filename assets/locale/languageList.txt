@@ -1,0 +1,20 @@
+Arabic:ar-AE
+German:de-DE
+Greek:el-GR
+English:en-US
+Spanish:es-ES
+French:fr-FR
+Icelandic:is-IS
+Italian:it-IT
+Hebrew:iw-IL
+Japanese:ja-JP
+Kazakh:kk-KZ
+Korean:ko-KR
+Dutch:nl-NL
+Polish:pl-PL
+Brazilian Portuguese:pt-BR
+Portuguese:pt-PT
+Russian:ru-RU
+Albanian:sq-AL
+Swedish:sv-SE
+Chinese:zh-CN
